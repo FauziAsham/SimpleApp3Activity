@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:layout_gravity="center"
+    android:background="@color/grayLight"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/gradient_backround"
+                    android:orientation="vertical">
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="350dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BREAKING NEWS !"
+                            android:textColor="#FF0000"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="Perempuan 19 Tahun \nDitembak Mati Militer Myanmar"
+                            android:gravity="center"
+                            android:textColor="@color/startBlue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text=' Seorang remaja perempuan tewas tertembak oleh pihak militer Myanmar saat mengikuti aksi demo, di tengah semakin banyaknya korban jiwa akibat keganasan junta. \n  Menyadur News.com.au, Kamis (4/3/2021) remaja berusia 19 tahun bernama Kyal Sin atau dikenal juga sebagai Angel atau dalam bahasa Indonesia berarti malaikat, tewas tertembak saat mengikuti aksi protes pada Rabu (3/3).Angel berpartisipasi dalam aksi protes di Mandalay dengan mengenakan kaos bertuliskan "Everything Gonna be Okay" atau "semuanya akan baik-baik saja". \n  Saat mengikuti aksi demo, Angel beberapa kali tertangkap kamera dan foto-fotonya kini viral di media sosial Twitter.'
+                android:textSize="20sp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+            <Button
+                android:textColor="@color/white"
+                android:background="@drawable/button_style"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next To Biodata"
+                android:onClick="nextToBiodata"/>
+            <Button
+                android:textColor="@color/white"
+                android:background="@drawable/button_style"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back to Beranda"
+                android:onClick="backToBeranda"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
